@@ -16,6 +16,7 @@ import { listRegions } from "@/lib/data/regions"
 import LocalizedClientLink from "@/components/molecules/LocalizedLink/LocalizedLink"
 import { MessageButton } from "@/components/molecules/MessageButton/MessageButton"
 import { SellNowButton } from "@/components/cells/SellNowButton/SellNowButton"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export const Header = async () => {
   const cart = await retrieveCart().catch(() => null)
@@ -62,6 +63,7 @@ export const Header = async () => {
         </div>
         <div className="flex items-center justify-end gap-2 lg:gap-4 w-full lg:w-1/3 py-2">
           <CountrySelector regions={regions} />
+          <ThemeToggle />
           {user && <MessageButton />}
           <UserDropdown user={user} />
           {user && (
