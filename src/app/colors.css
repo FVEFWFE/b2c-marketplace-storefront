@@ -93,6 +93,7 @@
     --blue-900: 0, 24, 51;
 }
 
+/* Light Mode (fallback) */
 :root {
     /* ArbVault Premium Background Colors */
     --bg-primary: var(--neutral-0);
@@ -193,4 +194,118 @@
     --border-premium-primary: var(--gold-600);
     --border-premium-secondary: var(--gold-200);
     --border-disabled: var(--neutral-400);
+}
+
+/* Dark Mode (Default) - Premium ArbVault Theme */
+:root,
+.dark {
+    /* Dark Mode Background Colors */
+    --bg-primary: var(--neutral-900);
+    --bg-secondary: var(--neutral-800);
+    --bg-tertiary: var(--neutral-700);
+
+    --bg-component-primary: var(--neutral-800);
+    --bg-component-primary-hover: var(--neutral-700);
+    --bg-component-primary-pressed: var(--neutral-600);
+    --bg-component-secondary: var(--neutral-700);
+    --bg-component-secondary-hover: var(--neutral-600);
+    --bg-component-secondary-pressed: var(--neutral-500);
+
+    /* Dark mode actions with enhanced blue/gold */
+    --bg-action-primary: var(--brand-600);
+    --bg-action-primary-hover: var(--brand-500);
+    --bg-action-primary-pressed: var(--brand-400);
+    --bg-action-secondary: rgba(var(--brand-500), 0.15);
+    --bg-action-secondary-hover: rgba(var(--brand-500), 0.25);
+    --bg-action-secondary-pressed: rgba(var(--brand-500), 0.35);
+    --bg-action-tertiary: rgba(var(--gold-500), 0.15);
+    --bg-action-tertiary-hover: rgba(var(--gold-500), 0.25);
+    --bg-action-tertiary-pressed: rgba(var(--gold-500), 0.35);
+
+    /* Dark mode status colors */
+    --bg-positive-primary: var(--green-500);
+    --bg-positive-primary-hover: var(--green-400);
+    --bg-positive-primary-pressed: var(--green-300);
+    --bg-positive-secondary: rgba(var(--green-500), 0.15);
+    --bg-positive-secondary-hover: rgba(var(--green-500), 0.25);
+    --bg-positive-secondary-pressed: rgba(var(--green-500), 0.35);
+
+    --bg-negative-primary: var(--red-500);
+    --bg-negative-primary-hover: var(--red-400);
+    --bg-negative-primary-pressed: var(--red-300);
+    --bg-negative-secondary: rgba(var(--red-500), 0.15);
+    --bg-negative-secondary-hover: rgba(var(--red-500), 0.25);
+    --bg-negative-secondary-pressed: rgba(var(--red-500), 0.35);
+
+    --bg-warning-primary: var(--yellow-500);
+    --bg-warning-primary-hover: var(--yellow-400);
+    --bg-warning-primary-pressed: var(--yellow-300);
+    --bg-warning-secondary: rgba(var(--yellow-500), 0.15);
+    --bg-warning-secondary-hover: rgba(var(--yellow-500), 0.25);
+    --bg-warning-secondary-pressed: rgba(var(--yellow-500), 0.35);
+
+    /* Premium gold enhanced for dark mode */
+    --bg-premium-primary: var(--gold-500);
+    --bg-premium-primary-hover: var(--gold-400);
+    --bg-premium-primary-pressed: var(--gold-300);
+    --bg-premium-secondary: rgba(var(--gold-500), 0.15);
+    --bg-premium-secondary-hover: rgba(var(--gold-500), 0.25);
+    --bg-premium-secondary-pressed: rgba(var(--gold-500), 0.35);
+
+    --bg-disabled: var(--neutral-600);
+
+    /* Dark Mode Content Colors */
+    --content-primary: var(--neutral-25);
+    --content-secondary: var(--neutral-300);
+    --content-tertiary: var(--neutral-900);
+
+    --content-action-primary: var(--brand-400);
+    --content-action-primary-hover: var(--brand-300);
+    --content-action-primary-pressed: var(--brand-200);
+    --content-action-on-primary: var(--neutral-900);
+    --content-action-on-secondary: var(--brand-300);
+    --content-action-on-tertiary: var(--neutral-0);
+
+    --content-positive-primary: var(--green-400);
+    --content-positive-on-primary: var(--neutral-900);
+    --content-positive-on-secondary: var(--green-300);
+
+    --content-negative-primary: var(--red-400);
+    --content-negative-on-primary: var(--neutral-900);
+    --content-negative-on-secondary: var(--red-300);
+
+    --content-warning-primary: var(--yellow-400);
+    --content-warning-on-primary: var(--neutral-900);
+    --content-warning-on-secondary: var(--yellow-300);
+
+    --content-premium-primary: var(--gold-400);
+    --content-premium-on-primary: var(--neutral-900);
+    --content-premium-on-secondary: var(--gold-300);
+
+    --content-disabled: var(--neutral-500);
+
+    /* Dark Mode Border Colors */
+    --border-primary: var(--neutral-700);
+    --border-secondary: var(--neutral-600);
+    --border-action: var(--brand-500);
+    --border-negative-primary: var(--red-500);
+    --border-negative-secondary: rgba(var(--red-500), 0.3);
+    --border-positive-primary: var(--green-500);
+    --border-positive-secondary: rgba(var(--green-500), 0.3);
+    --border-warning-primary: var(--yellow-500);
+    --border-warning-secondary: rgba(var(--yellow-500), 0.3);
+    --border-premium-primary: var(--gold-500);
+    --border-premium-secondary: rgba(var(--gold-500), 0.3);
+    --border-disabled: var(--neutral-600);
+}
+
+/* Light mode override (only when explicitly set) */
+.light {
+    --bg-primary: var(--neutral-0);
+    --bg-secondary: var(--neutral-25);
+    --bg-tertiary: var(--brand-900);
+    --content-primary: var(--neutral-900);
+    --content-secondary: var(--neutral-600);
+    --border-primary: var(--neutral-100);
+    --border-secondary: var(--neutral-200);
 }

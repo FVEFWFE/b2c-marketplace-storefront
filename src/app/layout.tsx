@@ -13,15 +13,15 @@ export const metadata: Metadata = {
   title: {
     template: `%s | ${
       process.env.NEXT_PUBLIC_SITE_NAME ||
-      "Mercur B2C Demo - Marketplace Storefront"
+      "ArbVault - Premium Curated Marketplace"
     }`,
     default:
       process.env.NEXT_PUBLIC_SITE_NAME ||
-      "Mercur B2C Demo - Marketplace Storefront",
+      "ArbVault - Premium Curated Marketplace",
   },
   description:
     process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
-    "Mercur B2C Demo - Marketplace Storefront",
+    "The premier, high-trust, curated marketplace for discerning collectors and professionals. Specializing in high-value, authenticated goods.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
   ),
@@ -37,9 +37,9 @@ export default async function RootLayout({
   const { locale } = await params
 
   return (
-    <html lang={locale} className="">
+    <html lang={locale} className="dark">
       <body
-        className={`${funnelDisplay.className} antialiased bg-primary text-secondary relative`}
+        className={`${funnelDisplay.className} antialiased bg-primary text-primary relative min-h-screen`}
       >
         {children}
         <Toaster position="top-right" />
