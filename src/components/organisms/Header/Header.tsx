@@ -39,10 +39,10 @@ export const Header = async () => {
   }
 
   return (
-    <header className="border-b border-primary bg-white">
+    <header className="border-b border-primary bg-component-primary shadow-sm">
       {/* Trust Bar */}
       <div className="bg-action text-action-on-primary py-2 px-4 lg:px-8">
-        <div className="flex items-center justify-center gap-6 text-sm">
+        <div className="flex items-center justify-center gap-6 text-sm font-medium">
           <div className="flex items-center gap-2">
             <span>🛡️</span>
             <span>SecureHold Escrow Protection</span>
@@ -55,11 +55,15 @@ export const Header = async () => {
             <span>🔒</span>
             <span>UPS Capital Insured Shipping</span>
           </div>
+          <div className="hidden xl:flex items-center gap-2">
+            <span>₿</span>
+            <span>Bitcoin Payments • Save 5%</span>
+          </div>
         </div>
       </div>
 
       {/* Main Header */}
-      <div className="flex py-3 lg:px-8 px-4">
+      <div className="flex py-4 lg:px-8 px-4">
         <div className="flex items-center lg:w-1/3">
           <MobileNavbar
             parentCategories={parentCategories}
@@ -78,20 +82,20 @@ export const Header = async () => {
               height={50}
               alt="ArbVault - Premium Curated Marketplace"
               priority
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </LocalizedClientLink>
         </div>
         
-        <div className="flex items-center justify-end gap-2 lg:gap-4 w-full lg:w-1/3 py-2">
+        <div className="flex items-center justify-end gap-3 lg:gap-4 w-full lg:w-1/3 py-2">
           <CountrySelector regions={regions} />
           {user && <MessageButton />}
           <UserDropdown user={user} />
           {user && (
-            <LocalizedClientLink href="/user/wishlist" className="relative">
-              <HeartIcon size={20} />
+            <LocalizedClientLink href="/user/wishlist" className="relative group">
+              <HeartIcon size={20} className="text-primary group-hover:text-premium transition-colors" />
               {Boolean(wishlistCount) && (
-                <Badge className="absolute -top-2 -right-2 w-4 h-4 p-0 bg-premium text-premium-on-primary">
+                <Badge className="absolute -top-2 -right-2 w-5 h-5 p-0 bg-premium text-premium-on-primary text-xs font-bold">
                   {wishlistCount}
                 </Badge>
               )}
@@ -105,12 +109,26 @@ export const Header = async () => {
       <Navbar categories={categories} />
       
       {/* Additional Trust Indicators */}
-      <div className="hidden lg:flex items-center justify-center gap-4 py-2 px-4 bg-component-secondary text-xs text-secondary">
-        <span>Trusted by 50,000+ verified professionals</span>
+      <div className="hidden lg:flex items-center justify-center gap-6 py-3 px-4 bg-component-secondary border-t border-primary text-xs text-secondary">
+        <div className="flex items-center gap-2">
+          <span>🏆</span>
+          <span>Trusted by 50,000+ verified professionals</span>
+        </div>
         <span>•</span>
-        <span>Est. 2019 (formerly GadgetSphere)</span>
+        <div className="flex items-center gap-2">
+          <span>📅</span>
+          <span>Est. 2019 (formerly GadgetSphere)</span>
+        </div>
         <span>•</span>
-        <span>$50M+ in secure transactions</span>
+        <div className="flex items-center gap-2">
+          <span>💰</span>
+          <span>$50M+ in secure transactions</span>
+        </div>
+        <span>•</span>
+        <div className="flex items-center gap-2">
+          <span>⚡</span>
+          <span>Same-day shipping • Real-time tracking</span>
+        </div>
       </div>
     </header>
   )
