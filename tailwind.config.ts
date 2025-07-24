@@ -67,6 +67,16 @@ export default {
             pressed: "rgba(var(--bg-warning-secondary-pressed))",
           },
         },
+        premium: {
+          DEFAULT: "rgba(var(--bg-premium-primary))",
+          hover: "rgba(var(--bg-premium-primary-hover))",
+          pressed: "rgba(var(--bg-premium-primary-pressed))",
+          secondary: {
+            DEFAULT: "rgba(var(--bg-premium-secondary))",
+            hover: "rgba(var(--bg-premium-secondary-hover))",
+            pressed: "rgba(var(--bg-premium-secondary-pressed))",
+          },
+        },
       },
       colors: {
         primary: "rgba(var(--content-primary))",
@@ -104,6 +114,13 @@ export default {
             secondary: "rgba(var(--content-warning-on-secondary))",
           },
         },
+        premium: {
+          DEFAULT: "rgba(var(--content-premium-primary))",
+          on: {
+            primary: "rgba(var(--content-premium-on-primary))",
+            secondary: "rgba(var(--content-premium-on-secondary))",
+          },
+        },
       },
       borderColor: {
         DEFAULT: "rgba(var(--border-primary))",
@@ -121,6 +138,10 @@ export default {
           DEFAULT: "rgba(var(--border-warning-primary))",
           secondary: "rgba(var(--border-warning-secondary))",
         },
+        premium: {
+          DEFAULT: "rgba(var(--border-premium-primary))",
+          secondary: "rgba(var(--border-premium-secondary))",
+        },
         disabled: "rgba(var(--border-disabled))",
       },
       borderRadius: {
@@ -133,6 +154,16 @@ export default {
         primary: "rgba(var(--content-action-on-primary))",
         secondary: "rgba(var(--content-action-on-secondary))",
         disabled: "rgba(var(--content-disabled))",
+        premium: "rgba(var(--content-premium-on-primary))",
+      },
+      fontFamily: {
+        'display': ['var(--font-funnel-sans)', 'system-ui', 'sans-serif'],
+        'body': ['system-ui', '-apple-system', 'sans-serif'],
+      },
+      boxShadow: {
+        'trust': '0 4px 12px rgba(29, 78, 216, 0.15)',
+        'premium': '0 4px 12px rgba(217, 119, 6, 0.15)',
+        'secure': '0 8px 24px rgba(21, 128, 61, 0.12)',
       },
     },
   },

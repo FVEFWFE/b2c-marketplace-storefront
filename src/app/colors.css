@@ -1,31 +1,44 @@
 :root {
     /* Neutral colors are the foundation of the color system. Almost everything in UI design — text, fields, backgrounds, dividers — are usually gray. */
     --neutral-0: 255, 255, 255;
-    --neutral-25: 247, 247, 247;
-    --neutral-50: 238, 238, 238;
-    --neutral-100: 226, 226, 226;
-    --neutral-200: 198, 198, 198;
-    --neutral-300: 163, 163, 163;
-    --neutral-400: 115, 115, 115;
-    --neutral-500: 82, 82, 82;
-    --neutral-600: 64, 64, 64;
-    --neutral-700: 38, 38, 38;
-    --neutral-800: 27, 27, 27;
-    --neutral-900: 22, 22, 22;
-    --neutral-1000: 9, 9, 9;
+    --neutral-25: 249, 250, 252;
+    --neutral-50: 244, 246, 250;
+    --neutral-100: 232, 236, 243;
+    --neutral-200: 203, 213, 224;
+    --neutral-300: 160, 174, 192;
+    --neutral-400: 107, 125, 149;
+    --neutral-500: 71, 85, 105;
+    --neutral-600: 51, 65, 85;
+    --neutral-700: 30, 41, 59;
+    --neutral-800: 15, 23, 42;
+    --neutral-900: 2, 8, 23;
+    --neutral-1000: 0, 3, 15;
 
-    /* Brand colors are used across all interactive elements such as buttons, links, inputs, etc. This color can define the overall feel and can elicit emotion. */
-    --brand-25: 247, 247, 247;
-    --brand-50: 238, 238, 238;
-    --brand-100: 226, 226, 226;
-    --brand-200: 198, 198, 198;
-    --brand-300: 163, 163, 163;
-    --brand-400: 115, 115, 115;
-    --brand-500: 82, 82, 82;
-    --brand-600: 64, 64, 64;
-    --brand-700: 27, 27, 27;
-    --brand-800: 22, 22, 22;
-    --brand-900: 9, 9, 9;
+    /* ArbVault Brand colors - Deep Blue with Gold Accents for premium, trustworthy feel */
+    --brand-25: 248, 250, 255;
+    --brand-50: 239, 246, 255;
+    --brand-100: 219, 234, 254;
+    --brand-200: 191, 219, 254;
+    --brand-300: 147, 197, 253;
+    --brand-400: 96, 165, 250;
+    --brand-500: 59, 130, 246;
+    --brand-600: 37, 99, 235;
+    --brand-700: 29, 78, 216;
+    --brand-800: 30, 64, 175;
+    --brand-900: 30, 58, 138;
+    
+    /* ArbVault Gold Accent Colors for premium features, badges, and trust signals */
+    --gold-25: 255, 253, 247;
+    --gold-50: 254, 249, 231;
+    --gold-100: 253, 240, 198;
+    --gold-200: 252, 226, 154;
+    --gold-300: 250, 204, 90;
+    --gold-400: 248, 180, 41;
+    --gold-500: 245, 158, 11;
+    --gold-600: 217, 119, 6;
+    --gold-700: 180, 83, 9;
+    --gold-800: 146, 64, 14;
+    --gold-900: 120, 53, 15;
     
     /* Red colors are used across error states and in "destructive" actions. */
     --red-25: 254, 243, 242;
@@ -40,20 +53,20 @@
     --red-800: 128, 35, 28;
     --red-900: 70, 13, 9;
 
-    /* Green colors communicate a positive action, positive trend, or a successful confirmation. */
-    --green-25: 239, 253, 244;
+    /* Green colors communicate security, verification, and successful transactions */
+    --green-25: 240, 253, 244;
     --green-50: 220, 252, 231;
     --green-100: 187, 247, 208;
-    --green-200: 135, 239, 172;
-    --green-300: 73, 222, 128;
-    --green-400: 34, 197, 93;
-    --green-500: 23, 163, 74;
-    --green-600: 23, 128, 61;
+    --green-200: 134, 239, 172;
+    --green-300: 74, 222, 128;
+    --green-400: 34, 197, 94;
+    --green-500: 22, 163, 74;
+    --green-600: 21, 128, 61;
     --green-700: 22, 101, 52;
     --green-800: 20, 83, 45;
     --green-900: 5, 46, 22;
 
-    /* Yellow colors may indicate a problem or that an action is potentially destructive or "on-hold". */
+    /* Yellow colors may indicate warnings or authentication pending states */
     --yellow-25: 255, 251, 237;
     --yellow-50: 255, 247, 212;
     --yellow-100: 255, 235, 168;
@@ -66,7 +79,7 @@
     --yellow-800: 126, 69, 16;
     --yellow-900: 68, 33, 6;
 
-    /* Blue colors are used to provide users with information about any actions or states of an application or system. */
+    /* Blue colors for informational states and secondary actions */
     --blue-25: 245, 250, 255;
     --blue-50: 235, 244, 255;
     --blue-100: 204, 228, 255;
@@ -81,9 +94,10 @@
 }
 
 :root {
+    /* ArbVault Premium Background Colors */
     --bg-primary: var(--neutral-0);
     --bg-secondary: var(--neutral-25);
-    --bg-tertiary: var(--neutral-1000);
+    --bg-tertiary: var(--brand-900);
 
     --bg-component-primary: var(--neutral-0);
     --bg-component-primary-hover: var(--neutral-25);
@@ -92,15 +106,16 @@
     --bg-component-secondary-hover: var(--neutral-50);
     --bg-component-secondary-pressed: var(--neutral-100);
 
-    --bg-action-primary: var(--brand-900);
+    /* Primary actions use ArbVault's deep blue for trust and authority */
+    --bg-action-primary: var(--brand-700);
     --bg-action-primary-hover: var(--brand-800);
-    --bg-action-primary-pressed: var(--brand-700);
-    --bg-action-secondary: rgba(var(--neutral-1000), 0.05);
-    --bg-action-secondary-hover: rgba(var(--neutral-1000), 0.1);
-    --bg-action-secondary-pressed: rgba(var(--neutral-1000), 0.2);
-    --bg-action-tertiary: rgba(var(--neutral-1000), 0.05);
-    --bg-action-tertiary-hover: rgba(var(--neutral-1000), 0.1);
-    --bg-action-tertiary-pressed: rgba(var(--neutral-1000), 0.2);
+    --bg-action-primary-pressed: var(--brand-900);
+    --bg-action-secondary: rgba(var(--brand-600), 0.1);
+    --bg-action-secondary-hover: rgba(var(--brand-600), 0.15);
+    --bg-action-secondary-pressed: rgba(var(--brand-600), 0.25);
+    --bg-action-tertiary: rgba(var(--gold-600), 0.1);
+    --bg-action-tertiary-hover: rgba(var(--gold-600), 0.15);
+    --bg-action-tertiary-pressed: rgba(var(--gold-600), 0.25);
 
     --bg-negative-primary: var(--red-600);
     --bg-negative-primary-hover: var(--red-700);
@@ -109,55 +124,73 @@
     --bg-negative-secondary-hover: var(--red-100);
     --bg-negative-secondary-pressed: var(--red-200);
 
-    --bg-positive-primary: var(--green-700);
-    --bg-positive-primary-hover: var(--green-800);
-    --bg-positive-primary-pressed: var(--green-900);
+    /* Positive states emphasize security and verification */
+    --bg-positive-primary: var(--green-600);
+    --bg-positive-primary-hover: var(--green-700);
+    --bg-positive-primary-pressed: var(--green-800);
     --bg-positive-secondary: var(--green-50);
     --bg-positive-secondary-hover: var(--green-100);
     --bg-positive-secondary-pressed: var(--green-200);
 
-    --bg-warning-primary: var(--yellow-700);
-    --bg-warning-primary-hover: var(--yellow-800);
-    --bg-warning-primary-pressed: var(--yellow-900);
+    --bg-warning-primary: var(--yellow-600);
+    --bg-warning-primary-hover: var(--yellow-700);
+    --bg-warning-primary-pressed: var(--yellow-800);
     --bg-warning-secondary: var(--yellow-50);
     --bg-warning-secondary-hover: var(--yellow-100);
     --bg-warning-secondary-pressed: var(--yellow-200);
 
+    /* Premium gold for special features and trust badges */
+    --bg-premium-primary: var(--gold-600);
+    --bg-premium-primary-hover: var(--gold-700);
+    --bg-premium-primary-pressed: var(--gold-800);
+    --bg-premium-secondary: var(--gold-50);
+    --bg-premium-secondary-hover: var(--gold-100);
+    --bg-premium-secondary-pressed: var(--gold-200);
+
     --bg-disabled: var(--neutral-200);
 
-    --content-primary: var(--neutral-1000);
-    --content-secondary: var(--neutral-500);
+    /* ArbVault Content Colors */
+    --content-primary: var(--neutral-900);
+    --content-secondary: var(--neutral-600);
     --content-tertiary: var(--neutral-0);
 
-    --content-action-primary: var(--brand-900);
+    --content-action-primary: var(--brand-700);
     --content-action-primary-hover: var(--brand-800);
-    --content-action-primary-pressed: var(--brand-700);
-    --content-action-on-primary: var(--brand-25);
-    --content-action-on-secondary: var(--neutral-1000);
+    --content-action-primary-pressed: var(--brand-900);
+    --content-action-on-primary: var(--neutral-0);
+    --content-action-on-secondary: var(--brand-700);
     --content-action-on-tertiary: var(--neutral-0);
 
-    --content-positive-primary: var(--green-800);
+    --content-positive-primary: var(--green-700);
     --content-positive-on-primary: var(--neutral-0);
-    --content-positive-on-secondary: var(--green-800);
+    --content-positive-on-secondary: var(--green-700);
 
     --content-negative-primary: var(--red-700);
     --content-negative-on-primary: var(--neutral-0);
-    --content-negative-on-secondary: var(--red-800);
+    --content-negative-on-secondary: var(--red-700);
 
-    --content-warning-primary: var(--yellow-800);
+    --content-warning-primary: var(--yellow-700);
     --content-warning-on-primary: var(--neutral-0);
-    --content-warning-on-secondary: var(--yellow-800);
+    --content-warning-on-secondary: var(--yellow-700);
+
+    /* Premium gold content for special elements */
+    --content-premium-primary: var(--gold-700);
+    --content-premium-on-primary: var(--neutral-0);
+    --content-premium-on-secondary: var(--gold-700);
 
     --content-disabled: var(--neutral-400);
 
-    --border-primary: var(--neutral-50);
-    --border-secondary: var(--neutral-800);
-    --border-action: var(--brand-900);
-    --border-negative-primary: var(--red-700);
+    /* ArbVault Border Colors */
+    --border-primary: var(--neutral-100);
+    --border-secondary: var(--neutral-200);
+    --border-action: var(--brand-700);
+    --border-negative-primary: var(--red-600);
     --border-negative-secondary: var(--red-200);
-    --border-positive-primary: var(--green-800);
+    --border-positive-primary: var(--green-600);
     --border-positive-secondary: var(--green-200);
-    --border-warning-primary: var(--yellow-800);
-    --border-warning-secondary: var(--yellow-50);
+    --border-warning-primary: var(--yellow-600);
+    --border-warning-secondary: var(--yellow-200);
+    --border-premium-primary: var(--gold-600);
+    --border-premium-secondary: var(--gold-200);
     --border-disabled: var(--neutral-400);
 }
