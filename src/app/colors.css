@@ -161,3 +161,34 @@
     --border-warning-secondary: var(--yellow-50);
     --border-disabled: var(--neutral-400);
 }
+
+/* Dark mode overrides */
+.dark {
+    /* Background colors for dark mode */
+    --bg-primary: var(--neutral-900);
+    --bg-secondary: var(--neutral-800);
+    --bg-tertiary: var(--neutral-700);
+    --bg-disabled: var(--neutral-600);
+    
+    --bg-component-primary: var(--neutral-800);
+    --bg-component-primary-hover: var(--neutral-700);
+    --bg-component-secondary: var(--neutral-700);
+    --bg-component-secondary-hover: var(--neutral-600);
+    
+    --bg-action-primary: var(--brand-200);
+    --bg-action-primary-hover: var(--brand-100);
+    --bg-action-primary-pressed: var(--brand-300);
+    
+    /* Content colors for dark mode */
+    --content-primary: var(--neutral-0);
+    --content-secondary: var(--neutral-100);
+    --content-tertiary: var(--neutral-200);
+    --content-disabled: var(--neutral-500);
+    
+    --content-action-primary: var(--brand-200);
+    --content-action-on-primary: var(--neutral-900);
+    
+    /* Border colors for dark mode */
+    --border-primary: var(--neutral-700);
+    --border-secondary: var(--neutral-600);
+}

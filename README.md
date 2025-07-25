@@ -20,19 +20,30 @@ for <a href="https://github.com/mercurjs/mercur">Mercur</a> - Open Source Market
   </p> 
 </div>
 
-## B2C Storefront for Marketplace
+## ArbVault - Premier High-Trust Marketplace
 
-Customizable storefront designed for B2C with all elements including browsing and buying products across multiple vendors at once.
+The premier marketplace for authenticated luxury tech, pro equipment, and collector items. Built on the B2C Storefront for Mercur, ArbVault implements advanced trust and conversion mechanisms for high-value transactions.
 
-Ready to go:
+### Key Features:
 
-- Home Page - <a href="https://b2c.mercurjs.com/">🛍️ Check demo </a>
-- Listing
-- Product Page
-- Shopping Cart
-- Seller Page
-- Selling Hub - Moved to external <a href="https://github.com/mercurjs/vendor-panel">VendorPanel</a>
-- Wishlist
+- **SecureHold Escrow 🛡️** - Every transaction protected
+- **ID.me Verified Sellers** - Government ID verification required
+- **Live Chat Support** - For high-value purchases
+- **Price History Tracking** - 90-day price trends vs retail
+- **Bitcoin Payments** - 5% discount with BTCPay integration
+- **Dark Mode** - Professional interface for discerning users
+- **Discrete Shipping** - Signature required, fully insured
+
+### Ready Components:
+
+- Home Page with Trust Indicators - <a href="https://arbvault.io/">🛡️ Check demo </a>
+- Product Pages with Escrow & Verification Badges
+- Seller Verification System
+- Bitcoin Payment Guide
+- About Page with Platform Story
+- Shopping Cart with Payment Protection
+- Seller Dashboard - Powered by <a href="https://github.com/mercurjs/vendor-panel">VendorPanel</a>
+- Wishlist for Premium Items
 
 # Part of Mercur
 

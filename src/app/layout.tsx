@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Funnel_Display } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "@medusajs/ui"
+import { ThemeProvider } from "@/components/theme-provider"
 
 const funnelDisplay = Funnel_Display({
   variable: "--font-funnel-sans",
@@ -41,8 +42,10 @@ export default async function RootLayout({
       <body
         className={`${funnelDisplay.className} antialiased bg-primary text-secondary relative`}
       >
-        {children}
-        <Toaster position="top-right" />
+        <ThemeProvider>
+          {children}
+          <Toaster position="top-right" />
+        </ThemeProvider>
       </body>
     </html>
   )

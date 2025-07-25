@@ -33,6 +33,14 @@ import { AddressForm } from "./AddressForm/AddressForm"
 import { ReviewForm } from "./ReviewForm/ReviewForm"
 import { ProfileDetails } from "./ProfileDetails/ProfileDetails"
 
+// Trust and Conversion Components
+export { EscrowBadge } from "./EscrowBadge/EscrowBadge"
+export { ShippingIndicators } from "./ShippingIndicators/ShippingIndicators"
+export { LiveChatButton } from "./LiveChatButton/LiveChatButton"
+export { PriceHistoryTracker } from "./PriceHistoryTracker/PriceHistoryTracker"
+export { SellerVerificationBadge } from "./SellerVerificationBadge/SellerVerificationBadge"
+export { BTCPayButton } from "./BTCPayButton/BTCPayButton"
+
 export {
   PrimeCategoryNavbar,
   CategoryNavbar,

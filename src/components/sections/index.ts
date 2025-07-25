@@ -13,6 +13,7 @@ import { ProductDetailsPage } from "./ProductDetailsPage/ProductDetailsPage"
 import { AlgoliaProductsListing } from "./ProductListing/AlgoliaProductsListing"
 import { AlgoliaTrendingListings } from "./HomeProductSection/AlgoliaTrendingListings"
 import { OrdersPagination } from "../organisms/OrdersPagination/OrdersPagination"
+import { TrustSection } from "./TrustSection/TrustSection"
 
 export {
   Hero,
@@ -30,4 +31,5 @@ export {
   AlgoliaProductsListing,
   AlgoliaTrendingListings,
   OrdersPagination,
+  TrustSection,
 }

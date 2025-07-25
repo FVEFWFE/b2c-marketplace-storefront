@@ -1,21 +1,30 @@
 const links = {
   customerServices: [
-    { label: 'FAQs', path: '#' },
-    { label: 'Track Order', path: '#' },
-    { label: 'Returns', path: '#' },
-    { label: 'Delivery', path: '#' },
-    { label: 'Payment', path: '#' },
+    { label: 'Buyer Protection', path: '/buyer-protection' },
+    { label: 'Escrow Process', path: '/escrow-process' },
+    { label: 'Track Order', path: '/track-order' },
+    { label: 'Dispute Resolution', path: '/dispute-resolution' },
+    { label: 'Bitcoin Guide', path: '/bitcoin-guide' },
   ],
   about: [
-    { label: 'About us', path: '#' },
-    { label: 'Blog', path: '#' },
-    { label: 'Privacy Policy', path: '#' },
-    { label: 'Terms & Conditions', path: '#' },
+    { label: 'About ArbVault', path: '/about' },
+    { label: 'Seller Verification', path: '/seller-verification' },
+    { label: 'Privacy Policy', path: '/privacy' },
+    { label: 'Terms of Service', path: '/terms' },
+    { label: 'Quick Rules', path: '/rules' },
   ],
   connect: [
-    { label: 'Facebook', path: 'https://facebook.com' },
-    { label: 'Instagram', path: 'https://instagram.com' },
-    { label: 'LinekdIn', path: 'https://linkedin.com' },
+    { label: 'Support Center', path: '/support' },
+    { label: 'Community Forum', path: '/forum' },
+    { label: 'LinkedIn', path: 'https://linkedin.com/company/arbvault' },
+    { label: 'System Status', path: '/status' },
+  ],
+  trust: [
+    { label: 'SecureHold Escrow', path: '/escrow' },
+    { label: 'ID.me Verification', path: '/verification' },
+    { label: 'Shipping Insurance', path: '/shipping-insurance' },
+    { label: 'Price Match Guarantee', path: '/price-match' },
+    { label: 'API Documentation', path: '/api' },
   ],
 };
 
