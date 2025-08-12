@@ -1,0 +1,3 @@
+- product-matcher.ts: Name-based matching, normalization, scoring
+- price-scraper.ts: Site scrapers and API fallbacks
+- price-tracker-service.ts: Orchestrates match, scrape, persistence

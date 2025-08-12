@@ -1,0 +1,1 @@
+export { registerAdminRouter as default } from './routes'

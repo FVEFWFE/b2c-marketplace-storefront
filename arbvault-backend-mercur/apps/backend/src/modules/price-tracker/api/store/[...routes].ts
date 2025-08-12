@@ -1,0 +1,1 @@
+export { registerStoreRouter as default } from './routes'
